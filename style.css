@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.header nav ul {
+    list-style: none;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header nav ul li a:hover {
+    color: #ff5733;
+}
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.intro .tekst {
+    max-width: 50%;
+}
+
+.intro h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    color: #666;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.intro .kliknij a {
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 10px 20px;
+    background-color: #ff5733;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.intro .kliknij a:hover {
+    background-color: #e03e25;
+}
+
+.intro .zdj img {
+    width: 45%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.kontakt1 {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.kontakt1 h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.kontakt1 p {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.kontakt1 .options {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.kontakt1 .option {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 30%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.kontakt1 .option img {
+    max-width: 80%;
+    margin-bottom: 15px;
+}
+
+.kontakt1 .option h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.kontakt1 .option p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.kontakt1 .btn {
+    background-color: #ff5733;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.kontakt1 .btn:hover {
+    background-color: #e03e25;
+}
+.contact-section {
+    padding: 40px 0;
+    background-color: #f4f4f4;
+}
+
+.contact-form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-form-container h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-form-container p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+  .contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form .submit-btn {
+    padding: 12px 25px;
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+ .contact-form .submit-btn:hover {
+    background-color: #e03e25;
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: #ff5733;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+	.intro .tekst,
+    .intro .zdj {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+.kontakt1 .options {
+        flex-direction: column;
+        align-items: center;
+    }
+.kontakt1 .option {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .intro h1 {
+        font-size: 2em;
+    }
+
+    .kontakt1 h1 {
+        font-size: 2em;
+    }
+
+    .contact-form-container h1 {
+        font-size: 2em;
+    }
+}
